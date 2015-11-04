@@ -11,8 +11,8 @@ RUN /elasticsearch/bin/plugin -i elasticsearch/marvel/latest --verbose
 RUN /elasticsearch/bin/plugin -i mobz/elasticsearch-head --verbose
 RUN /elasticsearch/bin/plugin -i polyfractal/elasticsearch-inquisitor --verbose
 RUN /elasticsearch/bin/plugin -i com.github.richardwilly98.elasticsearch/elasticsearch-river-mongodb/2.0.9  --verbose
-RUN /elasticsearch/bin/plugin -i analysis-kuromoji --verbose
-RUN /elasticsearch/bin/plugin -i analysis-phonetic --verbose
+RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-analysis-kuromoji/2.7.0 --verbose
+RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-analysis-phonetic/2.7.0 --verbose
 RUN /elasticsearch/bin/plugin -i royrusso/elasticsearch-HQ --verbose
 RUN /elasticsearch/bin/plugin -i elasticsearch/license/latest --verbose
 RUN /elasticsearch/bin/plugin -i elasticsearch/watcher/latest --verbose
