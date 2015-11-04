@@ -4,6 +4,8 @@ Ready to use lean (210MB) Elasticsearch Docker image ready for using within a Ku
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-elasticsearch-kubernetes/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-elasticsearch-kubernetes)
 
+**FORK NOTE: Added head, inquisitor, marvel, mongo-rivers and HQ plugins**
+
 ## Current software
 
 * Oracle JRE 8 Update 60
