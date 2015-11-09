@@ -7,15 +7,12 @@ ADD do_not_use.yml /elasticsearch/config/elasticsearch.yml
 
 # Install Elasticsearch plug-ins
 RUN /elasticsearch/bin/plugin -i io.fabric8/elasticsearch-cloud-kubernetes/1.3.0 --verbose
-RUN /elasticsearch/bin/plugin -i elasticsearch/marvel/latest --verbose
 RUN /elasticsearch/bin/plugin -i mobz/elasticsearch-head --verbose
 RUN /elasticsearch/bin/plugin -i polyfractal/elasticsearch-inquisitor --verbose
 RUN /elasticsearch/bin/plugin -i com.github.richardwilly98.elasticsearch/elasticsearch-river-mongodb/2.0.9  --verbose
 RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-analysis-kuromoji/2.7.0 --verbose
 RUN /elasticsearch/bin/plugin -i elasticsearch/elasticsearch-analysis-phonetic/2.7.0 --verbose
 RUN /elasticsearch/bin/plugin -i royrusso/elasticsearch-HQ --verbose
-RUN /elasticsearch/bin/plugin -i elasticsearch/license/latest --verbose
-RUN /elasticsearch/bin/plugin -i elasticsearch/watcher/latest --verbose
 
 # Override elasticsearch.yml config, otherwise plug-in install will fail
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
